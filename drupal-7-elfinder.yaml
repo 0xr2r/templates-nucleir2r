@@ -1,32 +1,17 @@
-id: wp-debug-log
-
+id: drupal-7-elfinder
 info:
-  name: WordPress debug log
-  author: geraldino2,dwisiswant0
-  severity: low
-  tags: wordpress,log
-  metadata:
-    max-request: 1
+  name: Drupal 7 elfinder
+  author: 1337kro
+  severity: high
+  reference:
+    - https://github.com/Kro0oz/drupal-7-elfinder
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}:8443/wp-content/debug.log"
-
-    matchers-condition: and
+      - "{{BaseURL}}/sites/all/libraries/elfinder/connectors/php/connector.php"
     matchers:
       - type: word
         words:
-          - octet-stream
-          - text/plain
-        part: header
-        condition: or
-
-      - type: regex
-        regex:
-          - "[[0-9]{2}-[a-zA-Z]{3}-[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2} [A-Z]{3}] PHP"
+          - '{"cwd":'
         part: body
-
-      - type: status
-        status:
-          - 200
