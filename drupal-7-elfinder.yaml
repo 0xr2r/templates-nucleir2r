@@ -4,7 +4,7 @@ info:
   author: 0xr2r
   severity: high
   reference:
-    - https://github.com/Kro0oz/drupal-7-elfinder
+    - https://github.com/0xr2r/drupal-7-elfinder
 
 http:
   - method: GET
