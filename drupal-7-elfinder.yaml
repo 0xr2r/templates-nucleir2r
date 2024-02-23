@@ -1,10 +1,10 @@
 id: drupal-7-elfinder
 info:
   name: Drupal 7 elfinder
-  author: 1337kro
+  author: 0xr2r
   severity: high
   reference:
-    - https://github.com/Kro0oz/drupal-7-elfinder
+    - https://github.com/0xr2r/drupal-7-elfinder
 
 http:
   - method: GET
