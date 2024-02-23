@@ -1,7 +1,7 @@
-id: mass_48_open_redirect_check
+id: open_redirect
 info:
-  name: Mass 48 Param For Open Redirect
-  author: SirBugs
+  name: Open Redirect
+  author: 0xr2r
   severity: medium
 requests:
   - method: GET
@@ -100,3 +100,4 @@ requests:
           - 304
           - 307
           - 308
+
