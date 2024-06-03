@@ -17,8 +17,8 @@ requests:
         part: body
         condition: or
         words:
-          - 'DOCKER_MYSQL_TYPE'
           - 'language:'
+          - 'DOCKER_MYSQL_TYPE'
           - 'MYSQL_ROOT_PASSWORD='
 
 
