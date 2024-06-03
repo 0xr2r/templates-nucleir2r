@@ -17,11 +17,7 @@ requests:
         part: body
         condition: or
         words:
-          - 'before_script:'
-          - 'jobs:'
-          - 'language:'
-          - 'MYSQL_ROOT_PASSWORD='
           - 'DOCKER_MYSQL_TYPE'
-        condition: and
+          - 'MYSQL_ROOT_PASSWORD='
           
 
