@@ -18,6 +18,9 @@ requests:
         condition: or
         words:
           - 'DOCKER_MYSQL_TYPE'
+          - 'language:'
           - 'MYSQL_ROOT_PASSWORD='
+
+
           
 
