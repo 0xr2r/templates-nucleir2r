@@ -20,7 +20,7 @@ requests:
           - 'before_script:'
           - 'jobs:'
           - 'language:'
-          - '127.0.0.1'
+          - 'MYSQL_ROOT_PASSWORD=fr0xl0r.TravisCI'
           - 'DOCKER_MYSQL_TYPE'
           
 
