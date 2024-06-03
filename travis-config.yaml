@@ -22,5 +22,6 @@ requests:
           - 'language:'
           - 'MYSQL_ROOT_PASSWORD='
           - 'DOCKER_MYSQL_TYPE'
+        condition: and
           
 
